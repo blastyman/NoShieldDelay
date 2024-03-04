@@ -2,7 +2,6 @@ package me.blasty.noshielddelay;
 
 import me.blasty.noshielddelay.listener.ShieldListener;
 import me.vaperion.blade.Blade;
-import me.vaperion.blade.bukkit.BladeBukkitPlatform;
 import me.vaperion.blade.paper.BladePaperPlatform;
 import org.bukkit.plugin.java.JavaPlugin;
 

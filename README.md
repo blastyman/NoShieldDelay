@@ -1,6 +1,6 @@
 # No Shield Delay
 
-This plugin was made with the intent to reduce shield delay without making shields too broken for lower ping players.
+This plugin was made with the intent to reduce shield delay without making shields broken for lower ping players.
 
 ## How to use
 * /shield maxdelay - Sets the maximum shield delay.

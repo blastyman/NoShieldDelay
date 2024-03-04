@@ -16,11 +16,10 @@ public class ShieldListener implements Listener {
 
     @EventHandler
     public void onShieldInteract(PlayerInteractEvent event) {
-        if (event.getMaterial().equals(Material.SHIELD)) {
-            if (event.isCancelled()) return;
+        if (!event.getMaterial().equals(Material.SHIELD)) return;
+        if (event.isCancelled()) return;
 
-            var player = event.getPlayer();
-            player.setShieldBlockingDelay(Math.min(MAX_SHIELD_DELAY, Math.min(MIN_SHIELD_DELAY, player.getPing() / 50)));
-        }
+        var player = event.getPlayer();
+        player.setShieldBlockingDelay(Math.min(MAX_SHIELD_DELAY, Math.min(MIN_SHIELD_DELAY, player.getPing() / 50)));
     }
 }

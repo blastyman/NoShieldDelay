@@ -3,6 +3,7 @@ package me.blasty.noshielddelay;
 import me.blasty.noshielddelay.listener.ShieldListener;
 import me.vaperion.blade.Blade;
 import me.vaperion.blade.bukkit.BladeBukkitPlatform;
+import me.vaperion.blade.paper.BladePaperPlatform;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class NoShieldDelay extends JavaPlugin {
@@ -22,7 +23,7 @@ public class NoShieldDelay extends JavaPlugin {
 
         getServer().getPluginManager().registerEvents(new ShieldListener(), this);
 
-        Blade.forPlatform(new BladeBukkitPlatform(this))
+        Blade.forPlatform(new BladePaperPlatform(this))
                 .config(cfg -> {
                     cfg.setFallbackPrefix("shield");
                     cfg.setDefaultPermissionMessage("No permission!");

@@ -16,7 +16,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.vaperion.blade:bukkit:3.0.12'
+    implementation 'com.github.vaperion.blade:paper:3.0.12'
 
     compileOnly 'io.papermc.paper:paper-api:1.20.1-R0.1-SNAPSHOT'
 }

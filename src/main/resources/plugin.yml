@@ -1,0 +1,6 @@
+name: NoShieldDelay
+version: 1.0.0
+description: Simple plugin to reduce shield delay.
+main: me.blasty.noshielddelay.NoShieldDelay
+authors: [blasty]
+api-version: 1.20
